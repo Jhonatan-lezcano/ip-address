@@ -1,0 +1,39 @@
+@use "../../assets/global";
+
+.infoIP-container {
+  height: 140px;
+  width: 80%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 35px;
+
+  .line {
+    height: 75px;
+    border-left: 1px solid rgba(224, 221, 221, 0.7);
+  }
+
+  .infoIP {
+    width: 25%;
+    height: 60%;
+    padding: 0 30px;
+
+    p {
+      color: global.$secondary-color;
+      font: {
+        weight: 700;
+      }
+    }
+
+    h2 {
+      margin-top: 10px;
+      color: global.$primary-color;
+      font: {
+        size: 2.5rem;
+        weight: 500;
+      }
+    }
+  }
+}

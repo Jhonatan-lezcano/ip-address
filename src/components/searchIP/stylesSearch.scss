@@ -1,0 +1,38 @@
+@use "../../assets/global";
+
+.search {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+
+  .search-input {
+    height: 100%;
+    width: 35%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    outline: none;
+  }
+
+  .btn-search {
+    height: 100%;
+    width: 50px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+
+    img {
+      height: 12px;
+      width: 12px;
+    }
+
+    &:hover {
+      background-color: global.$primary-color;
+      transition: all 0.5s ease;
+    }
+  }
+}
