@@ -18,12 +18,15 @@ export const IpAddressProvider = (props) => {
       const { ip, isp } = data;
       setIpAddress({ ...ipAddress, lat, lng });
       setInfoIP({ ip, city, country, timezone, isp });
-      console.log(data);
     });
   }, [keyword]);
 
+  console.log(ipAddress);
+
   return (
-    <IpAddressContext.Provider value={{ setKeyword, ipAddress, infoIP }}>
+    <IpAddressContext.Provider
+      value={{ setKeyword, ipAddress, setIpAddress, infoIP }}
+    >
       {props.children}
     </IpAddressContext.Provider>
   );

@@ -13,6 +13,10 @@
   .line {
     height: 75px;
     border-left: 1px solid rgba(224, 221, 221, 0.7);
+
+    @include global.media-up(sm) {
+      display: none;
+    }
   }
 
   .infoIP {
@@ -35,6 +39,14 @@
         weight: 500;
       }
     }
+    @include global.media-up(sm) {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   @include global.media-up(sm) {
@@ -45,18 +57,5 @@
     align-items: center;
     background-color: #fff;
     margin-top: 20px;
-  }
-
-  .line {
-    display: none;
-  }
-
-  .infoIP {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
