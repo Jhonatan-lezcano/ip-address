@@ -11,7 +11,7 @@ const MapView = () => {
 
   return (
     <div className="map-container">
-      <MapContainer center={[lat, lng]} zoom={8}>
+      <MapContainer center={[lat, lng]} zoom={8} zoomControl={false}>
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

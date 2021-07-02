@@ -36,4 +36,27 @@
       }
     }
   }
+
+  @include global.media-up(sm) {
+    height: 350px;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .infoIP {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
